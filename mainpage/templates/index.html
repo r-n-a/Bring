@@ -1,0 +1,256 @@
+{% load static %} 
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}"  />
+    <title>Bring it 2 me</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+		<header>
+			<div class="row header">
+				<div class="col-sm-3">
+				    <a href="/" ><img src="{% static '/img/logo.png' %}" /></a>
+				</div>
+				<div class="col-sm-6">
+				    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					  </button>
+					  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+						  <li class="nav-item active">
+							<a class="nav-link" href="#what">О нас<span class="sr-only">(current)</span></a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="#prob">Сервисы</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="#work">Как это работает</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="#">Драйверы</a>
+						  </li>
+						  <li class="nav-item dropdown len">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							  Ru
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							  <a class="dropdown-item" href="#">Ru</a>
+							  <a class="dropdown-item" href="#">En</a>
+							  <a class="dropdown-item" href="#">Uk</a>
+							</div>
+						  </li>
+						</ul>
+					  </div>
+					</nav>
+				</div>
+				<div class="col-sm-3">
+					<div class="header_reg">
+						<a href="#">Регистрация</a>
+					</div>
+					<div class="header_reg1">
+						<a href="#">Вход</a>
+					</div>
+				</div>
+				<div class="col-12">
+				    <div class="header_head">
+						Bring it 2 me 
+					</div>  
+					<div class="header_desc">
+						Мы убираем расстояния!
+					</div>  
+					<button type="button" class="btn btn-warning bt_head">Подробнее</button>
+				</div>
+			</div>
+			<img class="arr_to_down" src="{% static '/img/arr1.png' %}" />
+		</header>
+		<div class="row what_we_cr" id="what" >
+			<h2>
+			  Что мы создаём
+			</h2>
+			<div class="col-sm-6">
+			    <img class="" src="{% static '/img/im1.jpg' %}" />
+			</div>
+			<div class="col-sm-6">
+			     <h3>Решение задачи №1</h3>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			</div>
+			<div class="col-sm-6">
+			     <h3>Решение задачи №2</h3>
+				 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			</div>
+			<div class="col-sm-6">
+			    <img class="" src="{% static '/img/im2.jpg' %}" />
+			</div>
+	    </div>
+		<div class="row what_we_cr what_we_cr_1" id="prob" > 
+			<h2>
+			    Какие проблемы мы решаем			
+			</h2>
+			<div class="col-sm-6">
+			     <h3>Вы хотите  передать <span class="color_text" >подарок другу</span>  в другой стране</h3>
+				 <button type="button" class="btn btn-warning bt_head what_we_cr_button">Передать подарок</button>
+			</div>
+			<div class="col-sm-6">
+			    <img class="" src="{% static '/img/ic21.png' %}" />
+			</div>
+			<div class="col-sm-6 desc">
+			    <img class="" src="{% static '/img/ic22.png' %}" />
+			</div>
+			<div class="col-sm-6">
+			     <h3>Вы <span class="color_text" >забыли</span> планшет  <span class="color_text" >в гостиннице</span></h3>
+				 <button type="button" class="btn btn-warning bt_head what_we_cr_button">Передать подарок</button>
+			</div>
+			<div class="col-sm-6 mob">
+			    <img class="" src="{% static '/img/ic22.png' %}" />
+			</div>
+			<div class="col-sm-6">
+			     <h3>Вы хотите <span class="color_text" >купить</span> что-либо в магазине <span class="color_text" >в другом городе/стране</span></h3>
+				 <button type="button" class="btn btn-warning bt_head what_we_cr_button">Передать подарок</button>
+			</div>
+			<div class="col-sm-6">
+			    <img class="" src="{% static '/img/ic23.png' %}" />
+			</div>
+			<div class="col-sm-6 desc">
+			    <img class="" src="{% static '/img/ic24.png' %}" />
+			</div>
+			<div class="col-sm-6">
+			     <h3>Вам нужно <span class="color_text" >перегнать машину</span> в другую страну</h3>
+				 <button type="button" class="btn btn-warning bt_head what_we_cr_button">Передать подарок</button>
+			</div>
+			<div class="col-sm-6 mob">
+			    <img class="" src="{% static '/img/ic24.png' %}" />
+			</div>
+	    </div>
+		<div class="wrap_problems_we_solv">
+		<div class="row problems_we_solv">
+			<h2>
+			    Главные преимущества
+			</h2>
+			<div class="col-sm-4">
+				<img class="" src="{% static '/img/ic31.png' %}" />
+				<div>Простота</div>
+			</div>
+			<div class="col-sm-4">
+				<img class="" src="{% static '/img/ic32.png' %}" />
+				<div>Прозрачность</div>
+			</div>
+			<div class="col-sm-4">
+				<img class="" src="{% static '/img/ic33.png' %}" />
+				<div>Мультиязычность</div>
+			</div>
+	    </div>
+		</div>
+		<div class="wrap_how_it_work">
+		<div class="row how_it_work" id="work" >
+			<h2>
+			    Как это работает
+			</h2>
+			<div class="col-sm">
+			    <img class="" src="{% static '/img/fon3.png' %}" />
+			</div>
+	    </div>
+		<div class="row adv">
+			<h2>
+			    Ключевые задачи сервиса
+			</h2>
+			<div class="col-sm-4">
+			    <img class="" src="{% static '/img/ic41.png' %}" />
+				<h3>Передача посылок</h3>
+			</div>
+			<div class="col-sm-4">
+			    <img class="" src="{% static '/img/ic43.png' %}" />
+				<h3>Доставка товаров  магазинов других стран</h3>
+			</div>
+			<div class="col-sm-4">
+			    <img class="" src="{% static '/img/ic44.png' %}" />
+				<h3>Перевозка авто</h3>
+			</div>
+	    </div>
+		</div>		
+		<div class="key">
+			<div class="col-sm">
+			    
+			</div>
+	    </div>
+		<div class="row develop">
+			<h2>
+			  Развиваем сервис вместе
+			</h2>
+			<div class="col-sm-4">
+				<div class="develop_head">
+					Почтальон
+				</div>
+				<div class="develop_desc">
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="develop_head">
+					Логист
+				</div>
+				<div class="develop_desc">
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="develop_head">
+					Промоутер
+				</div>
+				<div class="develop_desc">
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				</div>
+			</div>
+			<div class="col-sm">
+			    <button type="button" class="btn btn-warning bt_head ">Регистрация</button>
+			</div>
+	    </div>
+		<div class="wrap_footer">
+	    <div class="row footer">
+			<div class="col-sm-6">
+			     <a href="/" ><img class="footer_logo" src="{% static '/img/logo.png' %}" /></a>
+			</div>
+			<div class="col-sm-6">
+				<div class="footer_soc">
+					<a href="#" ><img src="{% static '/img/app1.png' %}" /></a>
+					<a href="#" ><img src="{% static '/img/app2.png' %}" /></a>
+				</div>	
+			</div>
+			<div class="col-sm-3">
+			    <div class="footer_head" >Присоединиться к нам</div>
+				<a href="#" class="footer_desc" >Регистрация</a>
+				<a href="#" class="footer_desc" >Вакансии</a>
+			</div>
+			<div class="col-sm-3">
+			    <div class="footer_head" >Помощь</div>
+				<a href="#" class="footer_desc" >Часто задаваемые вопросы</a>
+				<a href="#" class="footer_desc" >Обратная связь</a>
+			</div>
+			<div class="col-sm-3">
+				<div class="footer_head" >Правовая информация</div>
+			    <a href="#" class="footer_desc" >Правила сервиса</a>
+				<a href="#" class="footer_desc" >Политика конфиденциальности</a>
+				<a href="#" class="footer_desc" >Обратная связь</a>
+			</div>
+			<div class="col-sm-3">
+			    <div class="footer_head" >Следите за нами в соцсетях</div>
+				<a href="#" class="footer_desc fb" >Facebook</a>
+				<a href="#" class="footer_desc inst" >Instagram</a>
+				<a href="#" class="footer_desc tw" >Twitter</a>
+			</div>
+	    </div>		
+		</div>	
+	</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
