@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Личный кабине{% endblock %}
+
+{% block content %}
+<div class="row row_reg row_reg_page">
+  <h2>Личный кабинет</h2>
+  <div class="col-sm-12 reg_mass">
+	<div>Вы можете <a href="{% url 'edit' %}">редактировать ваш профайл</a> или <a href="{% url 'password_change' %}">поменять пароль</a>.</div>
+  </div>
+</div>
+{% endblock %}

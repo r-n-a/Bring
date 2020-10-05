@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Создайте аккаунт{% endblock %}
+{% block content %}
+<div class="row row_reg row_reg_page">
+  <h2>Создайте аккаунт</h2>
+  <div class="col-sm-12 reg_mass">
+     <a class="facebook_reg" href=" ">Facebook</a>
+  </div>
+  <div class="col-sm-12 reg_mass">
+	  <div class="row_reg_mass" >Введите данные для регистрации:</div>
+	  <form action="." method="post">
+		{{ user_form.as_p }}
+		{% csrf_token %}
+		<p><input class="sub" type="submit" value="Регистрация"></p>
+	  </form>
+  </div>
+</div>
+{% endblock %}

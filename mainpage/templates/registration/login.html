@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Авторизация{% endblock %}
+
+{% block content %}
+<div class="row row_reg">
+  <h2>Авторизация</h2>
+  <div class="col-sm-12 reg_mass">
+  {% if form.errors %}
+    <div class="row_reg_mass" >
+      Данные не совпадают. Попробуйте еще раз.
+    </div>
+  {% else %}
+    <div class="row_reg_mass" >
+	  Авторизируйтесь или создайте новый <a href="{% url 'register' %}">аккаунт.</a>
+	</div>
+  {% endif %}
+  </div>
+  <div class="col-sm-12 reg_mass">
+     <a class="facebook_reg" href=" ">Facebook</a>
+  </div>
+  <div class="col-sm-12 reg_mass">
+    <form action="{% url 'login' %}" method="post">
+      {{ form.as_p }}
+      {% csrf_token %}
+      <input type="hidden" name="next" value="{{ next }}" />
+      <p><input class="sub" type="submit" value="Авторизация"></p>
+    </form>
+    <p><a href="{% url 'password_reset' %}">Забыли пароль?</a></p>
+  </div>
+</div>
+{% endblock %}

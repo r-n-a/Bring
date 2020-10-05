@@ -466,6 +466,64 @@ p {
 	}
 }
 
+.row_reg h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #474A55;
+    text-align: left;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.row_reg {
+	    min-height: 250px;
+}
+
+.reg_mass {
+	    text-align: left;
+    margin-bottom: 20px;
+}
+
+.reg_mass label {
+	width: 132px;
+}
+
+.reg_mass .sub {
+	color: #212529c7;
+    background-color: #F4CA49;
+    border-color: #F4CA49;
+    padding: 5px 25px 8px 25px;
+    font-weight: bold;
+    float: none;
+    clear: both;
+    cursor: pointer;
+}
+
+.helptext {
+	display: none;
+}
+
+.facebook_reg {
+	display: inline-block;
+    padding: 8px 15px;
+    background: #405dae;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

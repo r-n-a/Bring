@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +25,7 @@ SECRET_KEY = '$ic&p!zp(vr4_v49hru3ri15j3wm^=h+&gqhjjy6a24-*!0agi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bring-it-2-me.com']
+ALLOWED_HOSTS = ['*','bring-it-2-me.com']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mainpage.apps.MainpageConfig',
+    #'social_django',
 ]
 
 MIDDLEWARE = [
@@ -125,9 +126,28 @@ USE_L10N = True
 
 USE_TZ = True
 
+LOGIN_REDIRECT_URL = 'dashboard'
+
+LOGIN_URL = 'login'
+
+LOGOUT_URL = 'logout'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'account.authentication.EmailAuthBackend',
+    #'social_core.backends.facebook.FacebookOAuth2',
+]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# social auth settings
+#SOCIAL_AUTH_FACEBOOK_KEY = '365783474783374' # Facebook App ID
+#SOCIAL_AUTH_FACEBOOK_SECRET = '67726ec18ad404d08e18f3179cda0930' # Facebook App Secret
+#SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 
